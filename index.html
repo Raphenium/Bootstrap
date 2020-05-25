@@ -29,14 +29,14 @@
 
   <!-- Menu Wrapper -->    
   <div id="wrapper">
-      <nav class=" col-md-12 navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+      <nav class="col-md-12 navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
           <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+          <button id="sidebarToggleTop" class="btn btn-link d-sm-none rounded-circle mr-3">
             <i class="fa fa-bars"></i>
           </button>
           
-          <div class= col-md-6>
+          <div class= "col-md-6 d-none d-sm-block">
               <h3>Emzurl</h3>
           </div>
 
@@ -49,26 +49,6 @@
 
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
-
-            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
-            <li class="nav-item dropdown no-arrow d-sm-none">
-              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-search fa-fw"></i>
-              </a>
-              <!-- Dropdown - Messages -->
-              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
-                <form class="form-inline mr-auto w-100 navbar-search">
-                  <div class="input-group">
-                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary" type="button">
-                        <i class="fas fa-search fa-sm"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </li>
 
             <!-- Nav Item - Alerts -->
             <li class="nav-item dropdown no-arrow mx-1">
@@ -85,13 +65,10 @@
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
-                <span class="mr-2 ml-3 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                
+                <span class="mr-2 ml-3 d-none d-lg-inline text-black-600 small">Valerie Luna</span> 
               </a>
             </li>
-
           </ul>
-
         </nav>
         <!-- End of Topbar -->
 
@@ -103,7 +80,7 @@
     <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav sidebar sidebar-dark d-none d-sm-block accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -202,6 +179,7 @@
       <div id="content">
 
         <!-- Topbar -->
+      <div class ="container">
         <table class="table table-sm table-info">
           <thead class="thead">
             <tr>
@@ -209,174 +187,279 @@
             </tr>
           </thead>
           </table>
+        </div>
         <!-- End of Topbar -->
           
           <!-- Begin Table -->
-          <table class="table table-sm table-hover">
+<div class="table-responsive container d-none d-sm-block">
+  <table class="table table-hover table-responsive-sm">
   <thead class="thead-dark">
     <tr>
-       <th scope="col" style="width: 3%;"></th>
-      <th scope="col" style="width: 3%;">#</th>
-      <th scope="col" style="width: 17%;">Item</th>
-      <th scope="col" style="width: 12%;">Unit</th>
-      <th scope="col" style="width: 12%;">Unit Price</th>
-      <th scope="col" style="width: 10%;">Quantity</th>
-      <th scope="col" style="width: 9%;">Amount</th>
-      <th scope="col" style="width: 14%;">Amount Paid</th>
-      <th scope="col" style="width: 21%;">Vendor</th>
+       <th scope="col" style="width:5%;" class="small"></th>
+      <th scope="col" style="width: 3%;" class="small">#</th>
+      <th scope="col" style="width: 18%;" class="small">Item</th>
+      <th scope="col" style="width: 12%;" class="small">Unit</th>
+      <th scope="col" style="width: 11%;" class="small">Unit Price</th>
+      <th scope="col" style="width: 9%;" class="small">Quantity</th>
+      <th scope="col" style="width: 7%;" class="small">Amount</th>
+      <th scope="col" style="width: 13%;" class="small">Amount Paid</th>
+      <th scope="col" style="width: 25%;" class="small">Vendor</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row"><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
-        <i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i></th>
-      <td>1</td>
-      <td>Embroidery Materials</td>
-      <td>
+      <th scope="row" class="small"><div><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
+        <i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i></div></th>
+      <td class="small">1</td>
+      <td class="small">Embroidery Materials</td>
+      <td class="small">
         <div class="col-sm-8"></div>
-          <select class="col-sm-8">
-            <option>Yard</option>
-            <option>Dozen</option>
+          <select class="col-sm-8 small">
+            <option class="small">Yard</option>
+            <option class="small">Dozen</option>
           </select>
         </div>
       </td>
-      <td> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>1,500</span> </div> </td>
-      <td> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
-      <td><div> <span>1,500</span> </div></td>
-      <td><a href="#"><span><u>1,500 (Cash)</u></span> </a></div></td>
-      <td><a href="#"><span><u>Becky Tailors</u> <a href="#" style="align-self:right;"><span style="margin-left: 100px;"><i class="fas fa-cogs"style=""></i></span> </a></div></td>
+      <td class="small"> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>&#8358 1,500</span> </div> </td>
+      <td class="small"> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
+      <td class="small"><div> <span>&#8358 1,500</span> </div></td>
+      <td class="small"><a href="#"><span><u>&#8358 1,500 (Cash)</u></span> </a></div></td>
+      <td class="small"><a href="#"><span><u>Becky Tailors</u> <a href="#"><span><i class="fas fa-cogs float-right"style=""></i></span> </a></div></td>
     </tr>
  
     <tr>
-      <th scope="row"><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
+      <th scope="row" class="small"><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
         <i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i></th>
-      <td>1</td>
-      <td>Embroidery Materials</td>
-      <td>
+      <td class="small">2</td>
+      <td class="small">Buttons</td>
+      <td class="small">
         <div class="col-sm-8"></div>
-          <select class="col-sm-8">
-            <option>Yard</option>
-            <option>Dozen</option>
+          <select class="col-sm-8 small">
+            <option class="small">Dozen</option>
+            <option class="small">Yard</option>
           </select>
         </div>
       </td>
-      <td> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>1,500</span> </div> </td>
-      <td> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
-      <td><div> <span>1,500</span> </div></td>
-      <td><a href="#"><span><u>1,500 (Cash)</u></span> </a></div></td>
-      <td><a href="#"><span><u>Becky Tailors</u> <a href="#" style="align-self:right;"><span style="margin-left: 100px;"><i class="fas fa-cogs"style=""></i></span> </a></div></td>
+      <td class="small"> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>&#8358 1,500</span> </div> </td>
+      <td class="small"> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
+      <td class="small"><div> <span>&#8358 1,500</span> </div></td>
+      <td class="small"><a href="#"><span><u>&#8358 1,500 (Cash)</u></span> </a></div></td>
+      <td class="small"><a href="#"><span><u>Choose</u> <a href="#"><span><i class="fas fa-cogs float-right"style=""></i></span> </a></div></td>
     </tr>
   
     <tr>
-      <th scope="row"><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
+      <th scope="row" class="small"><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
         <i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i></th>
-      <td>1</td>
-      <td>Embroidery Materials</td>
-      <td>
+      <td class="small">3</td>
+      <td class="small">Ankara Materials</td>
+      <td class="small">
         <div class="col-sm-8"></div>
-          <select class="col-sm-8">
-            <option>Yard</option>
-            <option>Dozen</option>
+          <select class="col-sm-8 small">
+            <option class="small">Yard</option>
+            <option class="small">Dozen</option>
           </select>
         </div>
       </td>
-      <td> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>1,500</span> </div> </td>
-      <td> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
-      <td><div> <span>1,500</span> </div></td>
-      <td><a href="#"><span><u>1,500 (Cash)</u></span> </a></div></td>
-      <td><a href="#"><span><u>Becky Tailors</u> <a href="#" style="align-self:right;"><span style="margin-left: 100px;"><i class="fas fa-cogs"style=""></i></span> </a></div></td>
+      <td class="small"> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>&#8358 1,500</span> </div> </td>
+      <td class="small"> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
+      <td class="small"><div> <span>&#8358 1,500</span> </div></td>
+      <td class="small"><a href="#"><span><u class="text-danger">&#8358 1,500 (Cash)</u></span> </a></div></td>
+      <td class="small"><a href="#"><span><u>Becky Tailors</u> <a href="#"><span><i class="fas fa-cogs float-right"style=""></i></span> </a></div></td>
     </tr>
   
     <tr>
-      <th scope="row"><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
+      <th scope="row" class="small"><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
         <i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i></th>
-      <td>1</td>
-      <td>Embroidery Materials</td>
-      <td>
+      <td class="small">4</td>
+      <td class="small">George Materials</td>
+      <td class="small">
         <div class="col-sm-8"></div>
-          <select class="col-sm-8">
-            <option>Yard</option>
-            <option>Dozen</option>
+          <select class="col-sm-8 small">
+            <option class="small">Yard</option>
+            <option class="small">Dozen</option>
           </select>
         </div>
       </td>
-      <td> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>1,500</span> </div> </td>
-      <td> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
-      <td><div> <span>1,500</span> </div></td>
-      <td><a href="#"><span><u>1,500 (Cash)</u></span> </a></div></td>
-      <td><a href="#"><span><u>Becky Tailors</u> <a href="#" style="align-self:right;"><span style="margin-left: 100px;"><i class="fas fa-cogs"style=""></i></span> </a></div></td>
+      <td class="small"> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>&#8358 1,500</span> </div> </td>
+      <td class="small"> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
+      <td class="small"><div> <span>&#8358 1,500</span> </div></td>
+      <td class="small"><a href="#"><span><u class="text-danger">Credit</u></span> </a></div></td>
+      <td class="small"><a href="#"><span><u>Suswan Fabrics</u> <a href="#"><span><i class="fas fa-cogs float-right"style=""></i></span> </a></div></td>
     </tr>
 
  
     <tr>
-      <th scope="row"><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
+      <th scope="row" class="small"><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
         <i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i></th>
-      <td>1</td>
-      <td>Embroidery Materials</td>
-      <td>
+      <td class="small">5</td>
+      <td class="small">Black Threads</td>
+      <td class="small">
         <div class="col-sm-8"></div>
-          <select class="col-sm-8">
-            <option>Yard</option>
-            <option>Dozen</option>
+          <select class="col-sm-8 small">
+            <option class="small">carton</option>
+            <option class="small">Dozen</option>
           </select>
         </div>
       </td>
-      <td> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>1,500</span> </div> </td>
-      <td> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
-      <td><div> <span>1,500</span> </div></td>
-      <td><a href="#"><span><u>1,500 (Cash)</u></span> </a></div></td>
-      <td><a href="#"><span><u>Becky Tailors</u> <a href="#" style="align-self:right;"><span style="margin-left: 100px;"><i class="fas fa-cogs"style=""></i></span> </a></div></td>
+      <td class="small"> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>&#8358 1,500</span> </div> </td>
+      <td class="small"> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
+      <td class="small"><div> <span>&#8358 1,500</span> </div></td>
+      <td class="small"><a href="#"><span><u class="text-danger">Credit</u></span> </a></div></td>
+      <td class="small"><a href="#"><span><u>Becky Tailors</u> <a href="#"><span><i class="fas fa-cogs float-right"style=""></i></span> </a></div></td>
     </tr>
  
     <tr>
-      <th scope="row"><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
+      <th scope="row" class="small"><i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i>
         <i class="fas fa-ellipsis-v" style="align-self:center; padding-top:2px;"></i></th>
-      <td>1</td>
-      <td>Embroidery Materials</td>
-      <td>
+      <td class="small">6</td>
+      <td class="small">Fuel (cars)</td>
+      <td class="small">
         <div class="col-sm-8"></div>
-          <select class="col-sm-8">
-            <option>Yard</option>
-            <option>Dozen</option>
+          <select class="col-sm-8 small">
+            <option class="small">Litres</option>
+            <option class="small">Dozen</option>
           </select>
         </div>
       </td>
-      <td> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>1,500</span> </div> </td>
-      <td> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
-      <td><div> <span>1,500</span> </div></td>
-      <td><a href="#"><span><u>1,500 (Cash)</u></span> </a></div></td>
-      <td><a href="#"><span><u>Becky Tailors</u> <a href="#" style="align-self:right;"><span style="margin-left: 100px;"><i class="fas fa-cogs"style=""></i></span> </a></div></td>
+      <td class="small"> <div style="width: 75px; border: 1px solid; align-self:center;"> <span>&#8358 1,500</span> </div> </td>
+      <td class="small"> <div style="width: 60px; border: 1px solid; align-self:center;"> <span>1</span> </div></td>
+      <td class="small"><div> <span>&#8358 1,500</span> </div></td>
+      <td class="small"><a href="#"><span><u>&#8358 1,500 (Cash)</u></span> </a></div></td>
+      <td class="small"><a href="#"><span><u>Becky Tailors</u> <a href="#"><span><i class="fas fa-cogs float-right"style=""></i></span> </a></div></td>
     </tr>
   </tbody>
 </table>
-          <!-- End of Table --> 
+</div>
 
-          <div style="margin-bottom: 30px;">
+           <!-- Visible to Xs only -->
+      <div class="container d-block d-sm-none">
+        <div class="container border border-info mt-2 mb-2">
+          <div class="row pt-2 pb-2">
+            <div class="col-8"><p><strong>Materials Embroidery</strong> </p></div><div class="col-4 mt--2 mb--2"><i class="fas fa-cog float-right"></i></div>
+            <div class="col-8"><p>1 Yard x &#8358 1,500/unit</p></div><div class="col-4"><p class="float-right"><strong>&#8358 1,500</strong></p></div>
+            <div class="col-8"><a href="#"> <u class="text-primary">&#8358 1,500</u></a></div><div class="col-4"><a class="float-right"><u class="text-primary">Becky Tailors</u></a></div>
+          </div>
+        </div>
+
+        <div class="container border border-info mt-2 mb-2">
+          <div class="row pt-2 pb-2">
+            <div class="col-8 mt--2 mb--2"><p><strong>Materials Embroidery</strong> </p></div><div class="col-4 mt--2 mb--2"><i class="fas fa-cog float-right"></i></div>
+            <div class="col-8"><p>1 Yard x &#8358 1,500/unit</p></div><div class="col-4"><p class="float-right"><strong>&#8358 1,500</strong></p></div>
+            <div class="col-8"><a href="#"> <u class="text-primary">&#8358 1,500</u></a></div><div class="col-4"><a class="float-right"><u class="text-primary">Becky Tailors</u></a></div>
+          </div>
+        </div>
+
+        <div class="container border border-info mt-2 mb-2">
+          <div class="row pt-2 pb-2">
+            <div class="col-8 mt--2 mb--2"><p><strong>Materials Embroidery</strong> </p></div><div class="col-4 mt--2 mb--2"><i class="fas fa-cog float-right"></i></div>
+            <div class="col-8"><p>1 Yard x &#8358 1,500/unit</p></div><div class="col-4"><p class="float-right"><strong>&#8358 1,500</strong></p></div>
+            <div class="col-8"><a href="#"> <u class="text-primary">&#8358 1,500</u></a></div><div class="col-4"><a class="float-right"><u class="text-primary">Becky Tailors</u></a></div>
+          </div>
+        </div>
+
+        <div class="container border border-info mt-2 mb-2">
+          <div class="row pt-2 pb-2">
+            <div class="col-8 mt--2 mb--2"><p><strong>Materials Embroidery</strong> </p></div><div class="col-4 mt--2 mb--2"><i class="fas fa-cog float-right"></i></div>
+            <div class="col-8"><p>1 Yard x &#8358 1,500/unit</p></div><div class="col-4"><p class="float-right"><strong>&#8358 1,500</strong></p></div>
+            <div class="col-8"><a href="#"> <u class="text-primary">&#8358 1,500</u></a></div><div class="col-4"><a class="float-right"><u class="text-primary">Becky Tailors</u></a></div>
+          </div>
+        </div>
+
+        <div class="container border border-info mt-2 mb-2">
+          <div class="row pt-2 pb-2">
+            <div class="col-8 mt--2 mb--2"><p><strong>Materials Embroidery</strong> </p></div><div class="col-4 mt--2 mb--2"><i class="fas fa-cog float-right"></i></div>
+            <div class="col-8"><p>1 Yard x &#8358 1,500/unit</p></div><div class="col-4"><p class="float-right"><strong>&#8358 1,500</strong></p></div>
+            <div class="col-8"><a href="#"> <u class="text-primary">&#8358 1,500</u></a></div><div class="col-4"><a class="float-right"><u class="text-primary">Becky Tailors</u></a></div>
+          </div>
+        </div>
+
+        <div class="container border border-info mt-2 mb-2">
+          <div class="row pt-2 pb-2">
+            <div class="col-8 mt--2 mb--2"><p><strong>Materials Embroidery</strong> </p></div><div class="col-4 mt--2 mb--2"><i class="fas fa-cog float-right"></i></div>
+            <div class="col-8"><p>1 Yard x &#8358 1,500/unit</p></div><div class="col-4"><p class="float-right"><strong>&#8358 1,500</strong></p></div>
+            <div class="col-8"><a href="#"> <u class="text-primary">&#8358 1,500</u></a></div><div class="col-4"><a class="float-right"><u class="text-primary">Becky Tailors</u></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- End of visible to Xs only --> 
+          <!-- End of Table --> 
+          <div class="container">
+          <div style="margin-bottom: 20px; margin-top: 20px;">
             <a href="#"><span><i class="fas fa-plus-circle">  Add Another Expense</i></span></a>
           </div>
+          </div>
+          <!-- Visible to Xs only -->
+          <div class="container d-block d-sm-none">
+          <div class="container bg-info">
+            
+              <div><p class="text-dark small">Cash: &emsp; &#8358 1,500</p></div>
+              <div><p class="text-dark small">Credit: &emsp; &#8358 1,500</p></div>
+              <div><p class="text-dark small">Bank: &emsp; &#8358 1,500</p></div>
+              <div><strong><p class="text-dark small">Total: &emsp; &#8358 1,500</p></strong></div>
+          
+          </div>
+          </div>
 
-          <table class="table table-sm table-info">
+            <div class="container d-block d-sm-none">
+            <div class="container border border-info pb-2 pt-2 mb-2" style="background-color: rgb(210, 210, 210);">
+              
+                <div><p class="text-dark small">Have you recieved the goods/services?</p></div>
+                <div>
+                  <div></div>
+                    <select class="col-3">
+                      <option>Yes</option>
+                      <option>No</option>
+                    </select>
+                </div>
+            </div>
+            </div>
+
+            <div class="container d-block d-sm-none">
+              <div class="container bg-warning pt-2">
+                
+                  <div><p class="text-dark small">Outstanding Payment: &MediumSpace; <a href="#" class="text-dark"><u>Becky Tailors (&#8358 1,500)</u></a></p></div>
+                  <div><p class="text-dark small">Payment Due: &MediumSpace; <a href="#" class="text-primary"><u>Today (April 23, 2020)</u></a></p></div>
+                  <div><p class="small"><a href="#" class="text-primary"><u>Advance</u></a></p></div>
+              
+              </div>
+              </div>
+
+              <div class="container d-inline-block d-sm-none pt-2">
+                <div class="container bg-warning">
+                  
+                    <div><p class="text-dark small">Outstanding Payment: &MediumSpace; <a href="#" class="text-dark"><u>Becky Tailors (&#8358 1,500)</u></a></p></div>
+                    <div><p class="text-dark small">Payment Due: &MediumSpace; <a href="#" class="text-primary"><u>Today (April 23, 2020)</u></a></p></div>
+                    <div><p class="small"><a href="#" class="text-primary"><u>Advance</u></a></p></div>
+                
+                </div>
+                </div>
+
+          <!-- End of visible to Xs only -->
+
+          <div class="table table-responsive container d-none d-sm-block">
+          <table class="table table-sm table-responsive-sm table-info">
             <thead class="thead">
               <tr>
-                 <th scope="col" style="width: 20%;">Cash: &#8358 3,500</th>
-                <th scope="col" style="width: 20%;">Bank: &#8358 1,500</th>
-                <th scope="col" style="width: 45%;">Credit: &#8358 4,000</th>
-                <th scope="col" style="width: 15%;"><strong> Total: &#8358 9,000</strong></th>
+                 <th scope="col" style="width: 20%;" class="small">Cash: &#8358 3,500</th>
+                <th scope="col" style="width: 20%;" class="small">Bank: &#8358 1,500</th>
+                <th scope="col" style="width: 40%;" class="small">Credit: &#8358 4,000</th>
+                <th scope="col" style="width: 20%;" class="small"><strong> Total: &#8358 9,000</strong></th>
                 
               </tr>
             </thead>
             </table>
+         
 
 
             <table class="table table-secondary">
               <thead class="thead" style="border: solid 2px rgb(52, 207, 60); margin-bottom:15px">
                 <tr>
-                   <th scope="col" style="width: 30%;"><span>Have you received the goods/services?</span></th>
-                  <th scope="col" style="width: 10%;">
-                    <div class="col-sm-6"></div>
-                    <select class="col-sm6">
-                      <option>Yes</option>
-                      <option>No</option>
+                   <th scope="col" style="width: 40%;" class="small"><span class="small">Have you received the goods/services?</span></th>
+                  <th scope="col" style="width: 5%;">
+                    <div class="col-xs-6"></div>
+                    <select class="col-xs-6 small">
+                      <option class="small">Yes</option>
+                      <option class="small">No</option>
                     </select>
                   </div>
                 </th>
@@ -390,9 +473,9 @@
               <table class="table table-sm table-warning">
                 <thead class="thead">
                   <tr>
-                     <th scope="col" style="width: 30%;">Outstanding Payment:<a href="#"><span><u> 1,500 (Cash)</u></span> </a></th>
-                    <th scope="col" style="width:  60%;">Payment Due:<a href="#"><span><u> Today (April 23,2020)</u></span> </a></th>
-                    <th scope="col" style="width: 10%;"><a href="#"><span><u> Advance</u></span> </a></th>
+                     <th scope="col" style="width: 40%;" class="small">Outstanding Payment:<a href="#"><span><u> 1,500 (Cash)</u></span> </a></th>
+                    <th scope="col" style="width:  50%;" class="small">Payment Due:<a href="#"><span><u> Today (April 23,2020)</u></span> </a></th>
+                    <th scope="col" style="width: 10%;" class="small"><a href="#"><span><u> Advance</u></span> </a></th>
                   </tr>
                 </thead>
                 </table>
@@ -400,9 +483,9 @@
                 <table class="table table-sm table-warning">
                   <thead class="thead">
                     <tr>
-                       <th scope="col" style="width: 30%;">Outstanding Payment:<a href="#"><span><u> 1,500 (Cash)</u></span> </a></th>
-                      <th scope="col" style="width:  60%;">Payment Due:<a href="#"><span><u> Today (April 23,2020)</u></span> </a></th>
-                      <th scope="col" style="width: 10%;"><a href="#"><span><u> Advance</u></span> </a></th>
+                       <th scope="col" style="width: 40%;" class="small">Outstanding Payment:<a href="#"><span><u> 1,500 (Cash)</u></span> </a></th>
+                      <th scope="col" style="width:  50%;" class="small">Payment Due:<a href="#"><span><u> Today (April 23,2020)</u></span> </a></th>
+                      <th scope="col" style="width: 10%;" class="small"><a href="#"><span><u> Advance</u></span> </a></th>
                     </tr>
                   </thead>
                   </table>
@@ -410,19 +493,50 @@
                   <table class="table">
                     <thead class="thead">
                       <tr>
-                         <th style="width: 45%;"><button type="button" class="btn btn-primary" style="margin-left: 400px; padding-top: -15px; padding-bottom: -15px; width: 60px;" >Save </button></th>
-                        <th scope="col" style="width:  55%;">
+                         <th style="width: 45%;"><div><button class="btn btn-sm btn-primary border border-grey" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 400px; padding-top: -15px; padding-bottom: -15px; width: 60px;">
+                          Save
+                        </button></div></th>
+                         
+                         <th scope="col" style="width:  55%;">
                           <div class="col-sm-9"></div>
-                          <select class="col-sm9">
-                            <option>Create Order</option>
-                            <option>No</option>
-                          </select>
+                            <div class="dropdown">
+                              <button class="btn btn-sm btn-light border border-grey dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Create Order
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
                         </div>
                         </th>
+
+                    
                        
                       </tr>
                     </thead>
                     </table>
+                  </div>
+                  <div class=" container d-block d-sm-none mb-2">
+                    <button class="btn btn-sm btn-primary btn-block" type="button">
+                      Save Expenses
+                    </button>
+                  </div>
+
+                  <div class=" container d-block d-sm-none mb-3">
+                    <div class="dropdown">
+                      <button class="btn btn-sm btn-light btn-block border border-grey dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Create Order
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </div>
+                  
                       
 
 </body>
